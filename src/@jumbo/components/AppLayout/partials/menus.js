@@ -907,21 +907,21 @@ const chartMenus = {
 
 const mapsMenus = {
   name: <IntlMessages id={'sidebar.visualization.map'} />,
-  icon: <Map />,
+  // icon: <Map />,
   type: 'collapse',
   children: [
-    {
-      name: <IntlMessages id={'sidebar.visualization.map.simple'} />,
-      icon: <ArrowForward />,
-      type: 'item',
-      link: '/visualization/map/simple',
-    },
-    {
-      name: <IntlMessages id={'sidebar.visualization.map.styled'} />,
-      icon: <ArrowForward />,
-      type: 'item',
-      link: '/visualization/map/styled',
-    },
+    // {
+    //   name: <IntlMessages id={'sidebar.visualization.map.simple'} />,
+    //   icon: <ArrowForward />,
+    //   type: 'item',
+    //   link: '/visualization/map/simple',
+    // },
+    // {
+    //   name: <IntlMessages id={'sidebar.visualization.map.styled'} />,
+    //   icon: <ArrowForward />,
+    //   type: 'item',
+    //   link: '/visualization/map/styled',
+    // },
     {
       name: <IntlMessages id={'sidebar.visualization.map.geoLocation'} />,
       icon: <ArrowForward />,
@@ -1129,49 +1129,49 @@ const forgotPasswordMenus = {
   ],
 };
 
-const calendarMenus = {
-  name: <IntlMessages id={'sidebar.calendar'} />,
-  icon: <Event />,
-  type: 'collapse',
-  children: [
-    {
-      name: <IntlMessages id={'sidebar.calendar.basic'} />,
-      icon: <ArrowForward />,
-      type: 'item',
-      link: '/calendar/basic',
-    },
-    {
-      name: <IntlMessages id={'sidebar.calendar.cultures'} />,
-      icon: <ArrowForward />,
-      type: 'item',
-      link: '/calendar/cultures',
-    },
-    {
-      name: <IntlMessages id={'sidebar.calendar.popup'} />,
-      icon: <ArrowForward />,
-      type: 'item',
-      link: '/calendar/popup',
-    },
-    {
-      name: <IntlMessages id={'sidebar.calendar.rendering'} />,
-      icon: <ArrowForward />,
-      type: 'item',
-      link: '/calendar/rendering',
-    },
-    {
-      name: <IntlMessages id={'sidebar.calendar.selectable'} />,
-      icon: <ArrowForward />,
-      type: 'item',
-      link: '/calendar/selectable',
-    },
-    {
-      name: <IntlMessages id={'sidebar.calendar.timeslots'} />,
-      icon: <ArrowForward />,
-      type: 'item',
-      link: '/calendar/timeslots',
-    },
-  ],
-};
+// const calendarMenus = {
+//   name: <IntlMessages id={'sidebar.calendar'} />,
+//   icon: <Event />,
+//   type: 'collapse',
+//   children: [
+//     {
+//       name: <IntlMessages id={'sidebar.calendar.basic'} />,
+//       icon: <ArrowForward />,
+//       type: 'item',
+//       link: '/calendar/basic',
+//     },
+//     {
+//       name: <IntlMessages id={'sidebar.calendar.cultures'} />,
+//       icon: <ArrowForward />,
+//       type: 'item',
+//       link: '/calendar/cultures',
+//     },
+//     {
+//       name: <IntlMessages id={'sidebar.calendar.popup'} />,
+//       icon: <ArrowForward />,
+//       type: 'item',
+//       link: '/calendar/popup',
+//     },
+//     {
+//       name: <IntlMessages id={'sidebar.calendar.rendering'} />,
+//       icon: <ArrowForward />,
+//       type: 'item',
+//       link: '/calendar/rendering',
+//     },
+//     {
+//       name: <IntlMessages id={'sidebar.calendar.selectable'} />,
+//       icon: <ArrowForward />,
+//       type: 'item',
+//       link: '/calendar/selectable',
+//     },
+//     {
+//       name: <IntlMessages id={'sidebar.calendar.timeslots'} />,
+//       icon: <ArrowForward />,
+//       type: 'item',
+//       link: '/calendar/timeslots',
+//     },
+//   ],
+// };
 
 const usersMenus = {
   name: <IntlMessages id={'sidebar.modules.users'} />,
@@ -1214,12 +1214,16 @@ export const sidebarNavs = [
   {
     name: <IntlMessages id={'sidebar.modules'} />,
     type: 'section',
-    children: [usersMenus, calendarMenus],
+    children: [usersMenus
+      // , calendarMenus
+    ],
   },
   {
     name: <IntlMessages id={'sidebar.visualization'} />,
     type: 'section',
-    children: [chartMenus, mapsMenus],
+    children: [chartMenus,
+      // mapsMenus
+    ],
   },
   {
     name: <IntlMessages id={'sidebar.extraPages'} />,
@@ -1252,7 +1256,9 @@ export const horizontalDefaultNavs = [
   {
     name: <IntlMessages id={'sidebar.visualization'} />,
     type: 'collapse',
-    children: [chartMenus, mapsMenus],
+    children: [chartMenus
+      // , mapsMenus
+    ],
   },
   {
     name: <IntlMessages id={'sidebar.extras'} />,
@@ -1266,7 +1272,7 @@ export const horizontalDefaultNavs = [
       },
       customTimelineMenus,
       materialTimelineMenus,
-      calendarMenus,
+      // calendarMenus,
       usersMenus,
     ],
   },
@@ -1313,10 +1319,10 @@ export const minimalHorizontalMenus = [
         children: [loginPagesMenus, signupPagesMenus, forgotPasswordMenus, errorPagesMenus],
       },
       chartMenus,
-      mapsMenus,
+      // mapsMenus,
       customTimelineMenus,
       materialTimelineMenus,
-      calendarMenus,
+      // calendarMenus,
       usersMenus,
     ],
   },

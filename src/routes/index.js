@@ -61,7 +61,7 @@ const Routes = () => {
         <Route path="/components" component={Components} />
         <Route path="/extensions" component={Extensions} />
         <Route path="/visualization/chart" component={Charts} />
-        <Route path="/visualization/map" component={Maps} />
+        {/* <Route path="/visualization/map" component={Maps} /> */}
         <Route path="/extra-pages" component={ExtraPages} />
         <Route path="/apps" component={Apps} />
         <Route path="/custom-timeline" component={CustomTimelines} />
